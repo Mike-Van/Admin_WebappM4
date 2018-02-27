@@ -1,0 +1,80 @@
+﻿
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+<div class="form-group">
+    @if (ViewBag.Status == "warning")
+    {
+        <div class="alert alert-warning">@ViewBag.Message</div>
+    }
+    @if (ViewBag.Status == "info")
+    {
+        <div class="alert alert-info">@ViewBag.Message</div>
+    }
+    @if (ViewBag.Status == "success")
+    {
+        <div class="alert alert-success">@ViewBag.Message</div>
+    }
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Image")
+        </th>
+        <th>
+            @Html.DisplayName("Name")
+        </th>
+        <th>
+            @Html.DisplayName("Representative")
+        </th>
+        <th>
+            @Html.DisplayName("Category")
+        </th>
+        <th>
+            @Html.DisplayName("Email")
+        </th>
+        <th>
+            @Html.DisplayName("Contact")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var i in ViewBag.onePage)
+    {
+        <tr>
+            <td>
+                <img src='@Url.Action( "Show", "Companies", new { id = i.CompId } )' height="200" width="200" />
+            </td>
+            <td>
+                @i.CompName
+            </td>
+            <td>
+                @i.CompRep
+            </td>
+            <td>
+                @i.CompCat
+            </td>
+            <td>
+                @i.CompEmail
+            </td>
+            <td>
+                @i.CompCont
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = i.CompId }) |
+                @Html.ActionLink("Details", "Details", new { id = i.CompId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = i.CompId })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.PagedListPager((IPagedList)ViewBag.onePage, page => Url.Action("Index", new { page }))
