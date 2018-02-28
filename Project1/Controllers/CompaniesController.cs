@@ -114,14 +114,18 @@ namespace Project1.Controllers
         [ValidateInput(false)]
         public ActionResult Create(Company company, HttpPostedFileBase image)
         {
-            if (image != null)
+            if (ModelState.IsValid)
             {
-                company.CompImg = new byte[image.ContentLength];
-                image.InputStream.Read(company.CompImg, 0, image.ContentLength);
+                if (image != null)
+                {
+                    company.CompImg = new byte[image.ContentLength];
+                    image.InputStream.Read(company.CompImg, 0, image.ContentLength);
+                }
+                db.Companies.Add(company);
+                db.SaveChanges();
+                return View(company);
             }
-            db.Companies.Add(company);
-            db.SaveChanges();
-            return View(company);
+            return View();
         }
 
         // GET: Companies/Edit/5
@@ -156,14 +160,18 @@ namespace Project1.Controllers
         [ValidateInput(false)]
         public ActionResult Edit(Company company, HttpPostedFileBase image)
         {
-            if (image != null)
+            if (ModelState.IsValid)
             {
-                company.CompImg = new byte[image.ContentLength];
-                image.InputStream.Read(company.CompImg, 0, image.ContentLength);
+                if (image != null)
+                {
+                    company.CompImg = new byte[image.ContentLength];
+                    image.InputStream.Read(company.CompImg, 0, image.ContentLength);
+                }
+                db.Entry(company).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            db.Entry(company).State = EntityState.Modified;
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            return View(company);            
         }
 
         // GET: Companies/Delete/5

@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 
 }
-
+<div class="container">
 <h2>Index</h2>
 <div class="form-group">
     @if (ViewBag.Status == "warning")
@@ -78,3 +78,4 @@
 
 </table>
 @Html.PagedListPager((IPagedList)ViewBag.onePage, page => Url.Action("Index", new { page }))
+    </div>

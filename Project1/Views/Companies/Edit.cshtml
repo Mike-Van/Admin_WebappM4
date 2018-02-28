@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Edit";
 }
-
+<div class="container">
 <h2>Edit</h2>
 
 @using (Html.BeginForm("Edit", "Companies", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -124,3 +124,4 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+    </div>

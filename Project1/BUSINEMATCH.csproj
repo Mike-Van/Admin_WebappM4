@@ -680,7 +680,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53988</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53988/</IISUrl>
+          <IISUrl>http://localhost:53989/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:53989/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
