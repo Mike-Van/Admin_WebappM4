@@ -187,6 +187,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animation.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -196,6 +197,26 @@
     <Content Include="Content\carousel.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Dummy Data\a.gif" />
+    <Content Include="Dummy Data\avatar.png" />
+    <Content Include="Dummy Data\coca-cola-logo-260x260.png" />
+    <Content Include="Dummy Data\Dummy.JPG" />
+    <Content Include="Dummy Data\google.png" />
+    <Content Include="Dummy Data\huy.JPG" />
+    <Content Include="Dummy Data\icon.png" />
+    <Content Include="Dummy Data\logo.png" />
+    <Content Include="Dummy Data\logo_with-bg.png" />
+    <Content Include="Dummy Data\mike.jpg" />
+    <Content Include="Dummy Data\objective.jpg" />
+    <Content Include="Dummy Data\officialcover.gif" />
+    <Content Include="Dummy Data\pheng.jpg" />
+    <Content Include="Dummy Data\problem.jpg" />
+    <Content Include="Dummy Data\sokun.jpg" />
+    <Content Include="Dummy Data\solution.jpg" />
+    <Content Include="Dummy Data\Untitled-1.png" />
+    <Content Include="Dummy Data\Untitled-2.png" />
+    <Content Include="Dummy Data\Untitled-3.png" />
+    <Content Include="Dummy Data\vaifat.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -554,6 +575,7 @@
     <Content Include="Scripts\ckeditor\skins\moono-lisa\images\refresh.png" />
     <Content Include="Scripts\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Scripts\ckeditor\styles.js" />
+    <Content Include="Scripts\dynamic.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />

@@ -17,7 +17,8 @@ namespace Project1.Models
     {
         [Key]
         public int CompId { get; set; }
-        [Required(ErrorMessage = "Please upload an image")]
+        [Display(Name = "Logo")]
+        //[Required(ErrorMessage = "Please upload an image")]
         public byte[] CompImg { get; set; }
         [Required(ErrorMessage = "Company name is required")]
         [Display(Name = "Name")]

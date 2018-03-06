@@ -1,0 +1,9 @@
+﻿.shrink:hover {
+    -webkit-transform: scale(1.3);
+}
+
+.shrink{
+    -webkit-transition: 2s;
+}
+h2{color:blue;}
+

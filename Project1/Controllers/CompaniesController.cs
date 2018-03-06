@@ -123,9 +123,9 @@ namespace Project1.Controllers
                 }
                 db.Companies.Add(company);
                 db.SaveChanges();
-                return View(company);
+                return RedirectToAction("Index");
             }
-            return View();
+            return View(company);
         }
 
         // GET: Companies/Edit/5

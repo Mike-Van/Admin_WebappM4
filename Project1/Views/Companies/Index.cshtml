@@ -77,5 +77,5 @@
     }
 
 </table>
-@Html.PagedListPager((IPagedList)ViewBag.onePage, page => Url.Action("Index", new { page }))
+@Html.PagedListPager((IPagedList)ViewBag.onePage, page => Url.Action("Index", new { page, @class="pagination" }))
     </div>
