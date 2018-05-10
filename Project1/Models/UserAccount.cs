@@ -17,7 +17,7 @@ namespace Project1.Models
     {
         [Key]
         public int UserId { get; set; }
-        [Display(Name ="Username")]
+        [Display(Name = "Username")]
         [Required(ErrorMessage = "Username is required.")]
         public string UserName { get; set; }
         [Display(Name = "Email")]

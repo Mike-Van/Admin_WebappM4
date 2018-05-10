@@ -44,8 +44,8 @@ namespace Project1.Models
         [Display(Name = "Contact")]
         [Required(ErrorMessage = "Company contact is required")]
         public string CompCont { get; set; }
-        [Display(Name ="Description")]
+        [Display(Name = "Description")]
         [Required(ErrorMessage = "Company description is required")]
-        public string CompDesc { get; set; }        
+        public string CompDesc { get; set; }
     }
 }
