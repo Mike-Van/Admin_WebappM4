@@ -8,3 +8,9 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
 };
+
+CKEDITOR.editorConfig = function (config) {
+    config.font_names = 'Arial/Arial, Helvetica, sans-serif;' +
+        'Comic Sans MS/Comic Sans MS, cursive;' +
+        'Courier New/Courier New, Courier, monospace;'
+};
