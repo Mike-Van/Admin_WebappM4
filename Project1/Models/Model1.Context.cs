@@ -26,7 +26,6 @@ namespace Project1.Models
         }
     
         public virtual DbSet<Company> Companies { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<UserAccount> UserAccounts { get; set; }
     }
 }
